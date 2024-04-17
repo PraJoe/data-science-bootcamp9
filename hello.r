@@ -16,3 +16,8 @@ df %>%
   select(1:10) %>%
   gilter(country == "Thailand") %>%
   arrange(-income)
+
+# plot new histogram
+library(ggplot2)
+ggplot(df2, aes(income)) +
+geom_histogram()
